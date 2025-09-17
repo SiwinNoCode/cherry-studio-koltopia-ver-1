@@ -1682,6 +1682,9 @@
   "navigate": {
     "provider_settings": "Go to provider settings"
   },
+  "newsroom": {
+    "title": "Newsroom"
+  },
   "notes": {
     "characters": "Characters",
     "collapse": "Collapse",

@@ -1682,6 +1682,9 @@
   "navigate": {
     "provider_settings": "跳轉到服務商設置界面"
   },
+  "newsroom": {
+    "title": "新聞工作站"
+  },
   "notes": {
     "characters": "字符",
     "collapse": "收起",

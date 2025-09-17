@@ -1683,6 +1683,9 @@
   "navigate": {
     "provider_settings": "跳转到服务商设置界面"
   },
+  "newsroom": {
+    "title": "新闻工作站"
+  },
   "notes": {
     "characters": "字符",
     "collapse": "收起",

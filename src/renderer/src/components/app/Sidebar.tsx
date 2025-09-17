@@ -19,6 +19,7 @@ import {
   Folder,
   Languages,
   LayoutGrid,
+  Newspaper,
   MessageSquare,
   Monitor,
   Moon,
@@ -139,7 +140,8 @@ const MainMenus: FC = () => {
     knowledge: <FileSearch size={18} className="icon" />,
     files: <Folder size={18} className="icon" />,
     notes: <NotepadText size={18} className="icon" />,
-    code_tools: <Code size={18} className="icon" />
+    code_tools: <Code size={18} className="icon" />,
+    newsroom: <Newspaper size={18} className="icon" />
   }
 
   const pathMap = {
@@ -151,7 +153,8 @@ const MainMenus: FC = () => {
     knowledge: '/knowledge',
     files: '/files',
     code_tools: '/code',
-    notes: '/notes'
+    notes: '/notes',
+    newsroom: '/newsroom'
   }
 
   return sidebarIcons.visible.map((icon) => {

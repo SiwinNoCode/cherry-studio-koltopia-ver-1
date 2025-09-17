@@ -18,6 +18,7 @@ import {
   Folder,
   Languages,
   LayoutGrid,
+  Newspaper,
   MessageSquareQuote,
   NotepadText,
   Palette,
@@ -127,7 +128,8 @@ const SidebarIconsManager: FC<SidebarIconsManagerProps> = ({
       knowledge: <FileSearch size={16} />,
       files: <Folder size={16} />,
       notes: <NotepadText size={16} />,
-      code_tools: <Code size={16} />
+      code_tools: <Code size={16} />,
+      newsroom: <Newspaper size={16} />
     }),
     []
   )
