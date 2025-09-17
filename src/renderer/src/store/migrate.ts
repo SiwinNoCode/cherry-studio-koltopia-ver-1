@@ -2476,6 +2476,23 @@ const migrateConfig = {
       logger.error('migrate 155 error', error as Error)
       return state
     }
+  },
+  '156': (state: RootState) => {
+    try {
+      if (state.settings && state.settings.sidebarIcons) {
+        if (!state.settings.sidebarIcons.visible.includes('newsroom')) {
+          state.settings.sidebarIcons.visible.push('newsroom')
+        }
+        state.settings.sidebarIcons.visible = [...new Set(state.settings.sidebarIcons.visible)].filter((icon) =>
+          DEFAULT_SIDEBAR_ICONS.includes(icon)
+        )
+        state.settings.sidebarIcons.disabled = state.settings.sidebarIcons.disabled.filter((icon) => icon !== 'newsroom')
+      }
+      return state
+    } catch (error) {
+      logger.error('migrate 156 error', error as Error)
+      return state
+    }
   }
 }
 
